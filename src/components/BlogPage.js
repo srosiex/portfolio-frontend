@@ -1,6 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import {Grid, Tabs, Tab, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText} from 'react-mdl'
+
 
 export class BlogPage extends Component {
     state = {
@@ -29,20 +31,19 @@ export class BlogPage extends Component {
     }
 
     render() {
-        console.log('state:', this.state)
         const {blog, isLoaded, imageUrl} = this.state
         if(isLoaded){
             return (
-                <Fragment>
+                <div className="blog-content">
                     <Link to='/'>Back</Link>
                     <hr />
                     <img style={{width: '40%'}} src={imageUrl}/>
                     <h1>{blog.title.rendered}</h1>
                     <div dangerouslySetInnerHTML={{__html: blog.content.rendered}}></div>
-                </Fragment>
+                </div>
             )
         }
-        return <h3>Loading..</h3>
+        return <h3 className="blog-content">Loading..</h3>
     }
 }
 

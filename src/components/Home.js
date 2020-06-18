@@ -18,8 +18,8 @@ export class Home extends Component {
                         <p>Ruby | Rails | React | JS</p>
 
                         <div className="social-links">
-                            <a href="http://google.com" target="_blank"><i className="fa fa-linkedin-square" rel="noopener noreferrer" aria-hidden="true" /></a>
-                            <a href="http://google.com" target="_blank"><i className="fa fa-github-square" rel="noopener noreferrer" aria-hidden="true" /></a>                     
+                            <a href="https://www.linkedin.com/in/sarahhenderson-dev/" ><i className="fa fa-linkedin-square" rel="noopener noreferrer" aria-hidden="true" /></a>
+                            <a href="https://github.com/srosiex" target="_blank"><i className="fa fa-github-square" rel="noopener noreferrer" aria-hidden="true" /></a>                     
                         </div>
                     </div>
                 

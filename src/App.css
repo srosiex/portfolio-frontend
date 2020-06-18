@@ -63,3 +63,6 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
 .projects-body {
     padding-top: 5em;
 }
+.blog-content{
+    padding-top: 5em;
+}

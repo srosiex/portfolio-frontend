@@ -7,7 +7,7 @@ export class Navbar extends Component {
         return (
 <div  className="demo-big-content">
     <Layout fixedHeader>
-        <Header className="header-color" title="Title" scroll>
+        <Header className="header-color" title="Sarah Henderson" scroll>
             <Navigation>
             <NavLink to={`/`}>Home</NavLink>
             <NavLink to={`about`}>About Me</NavLink>           
