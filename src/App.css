@@ -63,6 +63,46 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
 .projects-body {
     padding-top: 5em;
 }
+.projects-grid{
+    display: flex;
+}
 .blog-content{
     padding-top: 5em;
+}
+.blog-img{
+    align-content: center;
+}
+.blogimg-div {
+   display: flex;
+   align-items: center;
+}
+.contact-body{
+    padding-top: 5em;
+    margin: auto;
+    background: grey;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.contact-grid{
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    background: white;
+    color: black;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+.contact-grid h2{
+    font-family: 'Anton', 'sans-serif';
+}
+.contact-grid p{
+    font-family: 'Oxygen', 'sans-serif';
+}
+.contact-grid hr {
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
 }

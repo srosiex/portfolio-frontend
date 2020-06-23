@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Blogs from './containers/Blogs'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import BlogPage from './components/BlogPage'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
@@ -14,12 +14,14 @@ function App() {
     <Router>
     <div>
       <Navbar />
+      <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/blog" component={Blogs} />
       <Route exact path="/blog/:id" component={BlogPage} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/resume" component={Resume} />
       <Route exact path="/about" component={About} />
+      </Switch>
     </div>
     </Router>
   );

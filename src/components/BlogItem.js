@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
-import {Card} from 'react-mdl'
+import {Card, CardTitle, Button, CardText} from 'react-mdl'
 
 export class BlogItem extends Component {
     state = {
@@ -40,14 +40,14 @@ export class BlogItem extends Component {
         if(isLoaded){
             return (
                 <div className="blog-content">
-                    <Card>
-                    <h2 style={{marginBottom: '0'}}>{title.rendered}</h2>
-                    <img style={{width: '30%'}} src={imageUrl} alt={title.rendered} /><br />
-                    <small>Blog by: <strong>{author}</strong></small>
-                    <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
-                    <Link to={`/blog/${id}`}>View Post</Link>
+                    <Card shadow={5} style={{minWidth:'700px', margin: 'auto'}}>
+                   <CardTitle><h2 style={{marginBottom: '0'}}>{title.rendered}</h2></CardTitle> 
+                    <img className="blog-img" style={{width: '30%'}} src={imageUrl} alt={title.rendered} /><br />
+                     <CardText>
+                     <small>Blog by: <strong>{author}</strong></small>
+                         <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div></CardText>
+                    <Button><Link to={`/blog/${id}`}>View Post</Link></Button>
                     </Card>
-                    <hr />
                 </div>
             )
         }

@@ -10,8 +10,8 @@ export class Navbar extends Component {
         <Header className="header-color" title="Sarah Henderson" scroll>
             <Navigation>
             <NavLink to={`/`}>Home</NavLink>
-            <NavLink to={`about`}>About Me</NavLink>           
-            <NavLink to={`projects`}>Projects</NavLink>           
+            <NavLink to={`projects`}>Projects</NavLink>  
+            <NavLink to={`about`}>About Me</NavLink>                 
             <NavLink to={`/blog`}>Blog</NavLink>
             <NavLink to={`/resume`}>Resume</NavLink>
             </Navigation>
