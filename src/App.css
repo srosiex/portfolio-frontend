@@ -77,6 +77,7 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
    align-items: center;
 }
 .contact-body{
+    display: flex;
     padding-top: 5em;
     margin: auto;
     background: grey;
@@ -86,10 +87,11 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
     justify-content: center;
 }
 .contact-grid{
+    display: flex;
     text-align: center;
     justify-content: center;
     width: 80%;
-    height: 550px;
+    height: 925px;
     background: white;
     color: black;
     border: 2px solid red;
@@ -105,4 +107,8 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
     border-top: 5px dotted black;
     width: 50%;
     margin: auto;
+}
+.contact-list i{
+
+    padding-right: 5rem;
 }
