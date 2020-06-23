@@ -85,17 +85,19 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
     width: 100%;
     height: 100%;
     justify-content: center;
+    overflow: hidden;
 }
 .contact-grid{
     display: flex;
     text-align: center;
     justify-content: center;
     width: 80%;
-    height: 925px;
+    height: 80%;
     background: white;
     color: black;
     border: 2px solid red;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 .contact-grid h2{
     font-family: 'Anton', 'sans-serif';
