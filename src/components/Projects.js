@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {Grid, Tabs, Tab, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText} from 'react-mdl'
+import {cookbookss} from '../photos/cookbookss.png'
+
 
 export class Projects extends Component {
     constructor(props){
@@ -16,14 +18,15 @@ export class Projects extends Component {
                 //Project 1 //
                 <div className="projects-grid">
                 <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height:'176px', background: 'url(https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png) center / cover '}}>
-                        React Project 1
+                    <CardTitle style={{color: '#fff', height:'176px', background: 'url({cookbookss}) center / cover '}}>
+                        Cookbook
                     </CardTitle>
-                    <CardText>asdflaksdjfa asdflaskdfalsdfj asdflkjasdkf</CardText>
+                    <CardText>Developed a single page web app for users to input recipes, organize by their favorites, and add comments.
+                    </CardText>
                     <CardActions border>
-                        <Button colored>Github</Button>
-                        <Button colored>Demo</Button>
-                        <Button colored>Youtube</Button>
+                        <Button colored><a href="https://github.com/srosiex/cookbook-frontend" target="_blank">Github</a></Button>
+                        <Button colored><a href="https://cookbook-sh.netlify.app/" target="_blank">Live Demo</a></Button>
+                        <Button colored><a href="https://www.youtube.com/watch?v=n48req87c80&feature=youtu.be" target="_blank">Youtube</a></Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share" />

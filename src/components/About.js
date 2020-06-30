@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Grid, Cell, List,ListItem, ListItemContent} from 'react-mdl'
+import photoprof from '../photos/photoprof.jpg'
 
 export class About extends Component {
     render() {
@@ -8,10 +9,10 @@ export class About extends Component {
                 <Grid className="contact-grid">
                     <Cell col={6}>
                         <h2>Sarah Henderson</h2>
-                        <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png" alt="img" style={{height:'250px'}} />  
+                        <img src={photoprof} alt="img" style={{height:'250px'}} />  
                     <br/><b>Contact</b>
-                    <p> <i className="fa fa-envelope" aria-hidden="true" />
-                              sarahrose.henderson@gmail.com
+                    <p> <i className="fa fa-envelope" aria-hidden="true" /> 
+                              <a href="mailto:sarahrose.henderson@gmail.com">sarahrose.henderson@gmail.com</a>
                     </p>
                     </Cell>
                     <Cell col={6}>

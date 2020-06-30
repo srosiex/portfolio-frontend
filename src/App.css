@@ -4,6 +4,9 @@ background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-2
 background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+a{
+    color: red;
+}
 
 .landing-grid {
     background: #e96443;  /* fallback for old browsers */
@@ -113,4 +116,13 @@ background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, F
 .contact-list i{
 
     padding-right: 5rem;
+}
+
+.resumeImg{
+    height: 60%;
+    width: 80%;
+}
+.resume-page{
+    padding-top: 80px;
+    padding-left: 25px;
 }

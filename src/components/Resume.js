@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import resume from '../photos/SarahHResume.png'
 
 export class Resume extends Component {
     render() {
         return (
-            <div>
+            <div className="resume-page">
                 <h1>Resume</h1>
+               <img className="resumeImg" alt="resume" src={resume}/>
             </div>
         )
     }
