@@ -94,13 +94,12 @@ a{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     height: 80%;
     background: white;
     color: black;
-    border: 2px solid red;
     margin-bottom: 20px;
-    overflow: hidden;
+    overflow: scroll;
 }
 .contact-grid h2{
     font-family: 'Anton', 'sans-serif';
@@ -112,10 +111,12 @@ a{
     border-top: 5px dotted black;
     width: 50%;
     margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .contact-list i{
-
-    padding-right: 5rem;
+/* 
+    padding-right: 5rem; */
 }
 
 .resumeImg{
