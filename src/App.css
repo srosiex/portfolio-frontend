@@ -20,6 +20,10 @@ color: black;
 .navbar a:hover{
     color: red;
 }
+.category-tabs li{
+    display: inline;
+    margin-right: 3px;
+}
 
 .landing-grid {
     text-align: center;
