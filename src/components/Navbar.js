@@ -1,26 +1,19 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
-import {Layout, Header, Navigation, Drawer, Content, Link, HeaderRow, Textfield, } from 'react-mdl'
 
 export class Navbar extends Component {
     render() {
         return (
-<div  className="demo-big-content">
-    <Layout fixedHeader>
-        <Header className="header-color" title="Sarah Henderson" scroll>
-            <Navigation>
-            <NavLink to={`/`}>Home</NavLink>
-            <NavLink to={`projects`}>Projects</NavLink>  
-            <NavLink to={`about`}>About Me</NavLink>                 
-            <NavLink to={`/blog`}>Blog</NavLink>
-            <NavLink to={`/resume`}>Resume</NavLink>
-            </Navigation>
-        </Header>
-        <Content>
-            <div className="page-content" />
-        </Content>
-    </Layout>
-</div>
+    <div  className="navbar">
+        <ul>
+            <li>Sarah Henderson</li>
+            <li><NavLink to={`/`}>Home</NavLink></li>
+            <li><NavLink to={`projects`}>Projects</NavLink></li>  
+            <li><NavLink to={`about`}>About Me</NavLink></li>                 
+            <li><NavLink to={`/blog`}>Blog</NavLink></li>
+            <li><NavLink to={`/resume`}>Resume</NavLink></li>
+        </ul>
+    </div>
         )
     }
 }
