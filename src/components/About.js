@@ -7,15 +7,15 @@ export class About extends Component {
             <div className="contact-body">
                 <div className="contact-grid">
                     <div>
-                        <h2>Sarah Henderson</h2>
                         <img src={photoprof} alt="img" style={{height:'250px'}} />  
                     <hr />
                     <p> <i className="fa fa-envelope" aria-hidden="true" /> 
                               <a href="mailto:sarahrose.henderson@gmail.com">sarahrose.henderson@gmail.com</a>
                     </p>
                   </div>
-                    <div>
-                    <p style={{paddingTop: '25px', width: '100%', margin: 'auto', fontSize: '15px'}}>
+                    <div className="about-info">
+                    <h2>About Me</h2>
+                    <p style={{ width: '100%', margin: 'auto', fontSize: '15px'}}>
                         Hi! I'm Sarah, a passionate and creative full stack web developer, recently graduated from Flatiron School. Currently in search of full-time employment in the DFW area or remote.
 
 <br/>I have a background in mortgage default and many years experience with client care. 

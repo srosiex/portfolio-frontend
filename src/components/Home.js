@@ -5,8 +5,8 @@ import profilePic from '../photos/profilepic.jpg'
 export class Home extends Component {
     render() {
         return (
-            <div>
-            <div className="landing-grid">
+            
+            <div className="home-wrapper">
                 <div className="home-content">
                     <img src={profilePic} alt="profile" className="profile-pic" />
                     <div className="banner-text">
@@ -24,7 +24,7 @@ export class Home extends Component {
                     </div>
                 </div>
             </div>
-            </div>
+            
         )
     }
 }
