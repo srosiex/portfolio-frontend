@@ -5,7 +5,7 @@ import profilePic from '../photos/profilepic.jpg'
 export class Home extends Component {
     render() {
         return (
-            <div style={{width: '100%', margin:'auto'}}>
+            <div>
             <div className="landing-grid">
                 <div className="home-content">
                     <img src={profilePic} alt="profile" className="profile-pic" />
@@ -22,15 +22,8 @@ export class Home extends Component {
                             <a href="https://twitter.com/sarahh_codes" target="_blank"><i className="fa fa-twitter-square" rel="noopener noreferrer" aria-hidden="true" /></a>                                       
                         </div>
                     </div>
-                
-                
                 </div>
-
             </div>
-            
-            
-            
-            
             </div>
         )
     }
