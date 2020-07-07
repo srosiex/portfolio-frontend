@@ -26,8 +26,8 @@ export class About extends Component {
             </div>
              <div className="contact-form-body">
                  <div className="contact-form">
-                  <form action="mailto:sarahrose.henderson@gmail.com" method="post" enctype="text/plain">
-                      <h1>Contact Me</h1>
+                  <form action="mailto:sarahrose.henderson@gmail.com" method="post" enctype="text/plain" contentEditable>
+                      <h2>Contact Me</h2>
                       <div className="form-text">
                       <input type="text" name="name" placeholder="Name" />
                       </div>

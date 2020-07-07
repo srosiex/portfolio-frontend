@@ -1,10 +1,21 @@
 a{
     text-decoration: none;
     color: pink;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }
 a:hover{
     background-color: rgb(238, 236, 236);
     cursor: pointer;
+}
+h1{
+    font-family: 'Fredoka One', cursive;
+}
+h2{
+    font-family: 'Sahitya', serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -125,9 +136,6 @@ color: black;
     margin-bottom: 20px;
     overflow-y: scroll;
 }
-.contact-grid h2{
-    font-family: 'Anton', 'sans-serif';
-}
 .contact-grid p{
     font-family: 'Oxygen', 'sans-serif';
 }
@@ -141,9 +149,7 @@ color: black;
 .about-content{
     padding-top: 25px;
 }
-.about-info{
-    
-}
+
 .contact-form-body{
     display: flex;
     padding-top: 5em;
@@ -153,30 +159,28 @@ color: black;
     justify-content: center;
     overflow-y: scroll;
     background-color: pink;
+    position: absolute;
 }
 .contact-form{
     background-color: white;
     width: 85%;
-    /* top:50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    padding:  10px 10px 20px;
+    padding: 30px 40px;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 0 20px #c2bfbfb3;
-
+    max-width: 600px;
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 40%;
-    height: 80%;
+    width: 35%;
+    height: 60%;
     background: white;
     color: black;
     margin-bottom: 40px;
-    /* overflow-y: scroll; */
+    position: absolute;
 }
-.contact-form h1{
+.contact-form h2{
     margin-top: 0;
     font-weight: 200;
 }
@@ -185,6 +189,7 @@ color: black;
     margin: 8px 0;
     padding: 12px 18px;
     border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
 }
 .form-text input,.form-text textarea{
     width: 100%;
@@ -192,6 +197,16 @@ color: black;
     background: none;
     outline: none;
     font-size: 18px;
+    margin-top: 6px;
+    max-width: 85%;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 0;
+    margin-top: 8px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }
 
 /* Resume */
