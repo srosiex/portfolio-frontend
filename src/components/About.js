@@ -4,7 +4,7 @@ import photoprof from '../photos/photoprof.jpg'
 export class About extends Component {
     render() {
         return (
-            <div className="contact-body">
+            <><div className="contact-body">
                 <div className="contact-grid">
                     <div>
                         <img src={photoprof} alt="img" style={{height:'250px'}} />  
@@ -21,29 +21,32 @@ export class About extends Component {
 <br/>I have a background in mortgage default and many years experience with client care. 
 <br/>I am self motivated, love new challenges and problem solving. My goal is to bring value to a team by meeting tech and client needs, and staying abreast on new technologies. Please feel free to reach out if you want to chat about coding, or if you are hiring and think I would be a good fit. 
                             </p>   
-                           
-
-                        {/* <h2>Contact</h2>
-                        <hr />
-                        <div className="contact-list">
-                        <List>
-                         <ListItem>
-                          <ListItemContent style={{fontSize: '15px'}}>
-                              <i className="fa fa-envelope" aria-hidden="true" />
-                              sarahrose.henderson@gmail.com
-                          </ListItemContent>
-                        </ListItem>
-                        <ListItem>
-                          <ListItemContent style={{fontSize: '15px'}}>
-                              <i className="fa fa-envelope" aria-hidden="true" />
-                              sarahrose.henderson@gmail.com
-                          </ListItemContent>
-                        </ListItem>
-
-                        </List></div> */}
                     </div>
                 </div>
             </div>
+             <div className="contact-form-body">
+                 <div className="contact-form">
+                  <form action="mailto:sarahrose.henderson@gmail.com" method="post" enctype="text/plain">
+                      <h1>Contact Me</h1>
+                      <div className="form-text">
+                      <input type="text" name="name" placeholder="Name" />
+                      </div>
+                      <br />
+                      <div className="form-text">
+                      <input type="email" name="email" placeholder="Email" />
+                      </div>
+                      <br />
+                      <div className="form-text">
+                          <textarea placeholder="Message"></textarea>
+                      </div>
+                      <br />
+
+                        <a class="btn">Send</a>
+
+                  </form>
+                  </div>
+             </div></>
+            
         )
     }
 }

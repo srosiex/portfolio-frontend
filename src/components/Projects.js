@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {cookbookss} from '../photos/cookbookss.png'
 import projects from './projectInfo'
+import ProjCard from '../containers/ProjCard'
 
 
 export class Projects extends Component {
@@ -12,10 +13,8 @@ export class Projects extends Component {
         }
     }
 
-    displayProj = () => {
-        if(projects.category === "react"){
-            console.log('react yo')
-        }
+    projInfo = () => {
+        projects.map(p=><ProjCard name={p.name}/>)
     }
 
 
@@ -31,19 +30,11 @@ export class Projects extends Component {
                        <li>React</li>
                        </ul>
                 </div>
-                     <div>
-                        <div>
-                            <div className="content">
-                          {this.displayProj()}
-                          {projects.map(c => {
-                            return c.category
-                          })}
-                            </div>
-                        </div>
+                    <div className="content">
+                        {this.projInfo()}
                     </div>
-                
-          
-            </div>
+                </div>
+
         )
     }
 }
