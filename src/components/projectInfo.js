@@ -9,4 +9,13 @@ const projects = [
         category: "javascript"
     }
 ]
+// const projects = {
+//         react: {
+//             name: "cookbook",
+//             category: "react",
+//             description: "blah blah blah"
+//             }
+
+// }
 export default projects
+

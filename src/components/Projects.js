@@ -13,13 +13,9 @@ export class Projects extends Component {
         }
     }
 
-    projInfo = () => {
-        projects.map(p=><ProjCard name={p.name}/>)
-    }
-
+     projectList = () => projects.map(p=> <ProjCard name={p.name} />)
 
     render() {
-        {console.log('hello')}
         return (
             <div className="projects-body">
                 <div className="category-tabs" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} >
@@ -31,7 +27,7 @@ export class Projects extends Component {
                        </ul>
                 </div>
                     <div className="content">
-                        {this.projInfo()}
+                        {this.projectList()}
                     </div>
                 </div>
 
