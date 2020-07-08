@@ -9,25 +9,44 @@ export class Projects extends Component {
         super(props);
 
         this.state = {
-            activeTab: 0
+            activeTab: 'react'
         }
     }
 
-     projectList = () => projects.map(p=> <ProjCard name={p.name} />)
+    projectList = (projects) => projects.map(p=> <ProjCard projects={p} />)
+
+    handleClick = e => {
+        e.preventDefault()
+        this.setState({
+            activeTab: e.target.value
+        })
+    }
+
+    filterProj = () => {
+        let filteredList = '';
+        if(this.state.activeTab === 'react'){
+            filteredList = projects.filter(p=>p.category==='react')
+        }else if(this.state.activeTab === 'javascript'){
+            filteredList = projects.filter(p=>p.category ==='javascript')
+        }
+        
+        return filteredList
+    }
 
     render() {
+        console.log(this.state)
         return (
             <div className="projects-body">
-                <div className="category-tabs" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} >
-                       <ul className="tabs"  >
-                       <li>Javascript</li> 
+                <div className="category-tabs">
+                       <ul className="tabs">
+                       <li><button value="javascript" onClick={this.handleClick}>javascript</button></li> 
                        <li>Rails</li>
                        <li>Sinatra</li>
-                       <li>React</li>
+                       <li><button value="react" onClick={this.handleClick}>react</button></li>
                        </ul>
                 </div>
                     <div className="content">
-                        {this.projectList()}
+                        {this.projectList(this.filterProj())}
                     </div>
                 </div>
 

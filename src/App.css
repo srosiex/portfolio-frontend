@@ -106,6 +106,15 @@ color: black;
 .projects-grid{
     display: flex;
 }
+.category-tabs li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.category-tabs li:hover{
+    background-color: lightsteelblue;
+    cursor: pointer;
+    border-radius: 9px;
+}
 
 /* //////Blog///// */
 
