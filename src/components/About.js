@@ -38,7 +38,7 @@ export class About extends Component {
                       </div>
                       <br />
                       <div className="form-text">
-                       <textarea placeholder="Message"></textarea>
+                       <textarea name="message" placeholder="Message"></textarea>
                       </div>
                       <br />
                     <input type="submit" value="send"/>
