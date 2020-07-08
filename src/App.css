@@ -14,6 +14,14 @@ h1{
 h2{
     font-family: 'Sahitya', serif;
 }
+input[type=submit] {
+    background-color: white;
+    border: none;
+    color: lightpink;
+}
+input[type=submit]:hover{
+   background-color: rgb(238, 235, 235);
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -142,9 +150,9 @@ color: black;
 .contact-grid hr {
     border-top: 5px dotted black;
     width: 50%;
-    margin: auto;
+    /* margin: auto;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; */
 }
 .about-content{
     padding-top: 25px;
@@ -182,7 +190,10 @@ color: black;
 }
 .contact-form h2{
     margin-top: 0;
-    font-weight: 200;
+
+}
+.contact-form form:focus{
+    outline: none;
 }
 .form-text{
     border: 1px solid gray;
@@ -201,10 +212,16 @@ color: black;
     max-width: 85%;
     font-family: 'Montserrat', sans-serif;
 }
+.form-text input:hover{
+    background-color: rgb(238, 235, 235);
+}
+.form-text textarea:hover{
+    background-color: rgb(238, 235, 235);
+}
 .btn{
     display: inline-block;
-    padding: 14px 0;
-    margin-top: 8px;
+    /* padding: 14px 0; */
+    /* margin-top: 8px; */
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
 }

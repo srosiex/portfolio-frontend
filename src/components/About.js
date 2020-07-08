@@ -9,7 +9,7 @@ export class About extends Component {
                     <div>
                         <img src={photoprof} alt="img" style={{height:'250px'}} />  
                     <hr />
-                    <p> <i className="fa fa-envelope" aria-hidden="true" /> 
+                    <p> <i className="fa fa-envelope" aria-hidden="true" style={{color: 'lightGray'}} /> 
                               <a href="mailto:sarahrose.henderson@gmail.com">sarahrose.henderson@gmail.com</a>
                     </p>
                   </div>
@@ -26,8 +26,9 @@ export class About extends Component {
             </div>
              <div className="contact-form-body">
                  <div className="contact-form">
-                  <form action="mailto:sarahrose.henderson@gmail.com" method="post" enctype="text/plain" contentEditable>
-                      <h2>Contact Me</h2>
+                  <form action="mailto:sarahrose.henderson@gmail.com" method="post" enctype="text/plain">
+                  <h2>Contact Me</h2>
+
                       <div className="form-text">
                       <input type="text" name="name" placeholder="Name" />
                       </div>
@@ -37,11 +38,10 @@ export class About extends Component {
                       </div>
                       <br />
                       <div className="form-text">
-                          <textarea placeholder="Message"></textarea>
+                       <textarea placeholder="Message"></textarea>
                       </div>
                       <br />
-
-                        <a class="btn">Send</a>
+                    <input type="submit" value="send"/>
 
                   </form>
                   </div>
