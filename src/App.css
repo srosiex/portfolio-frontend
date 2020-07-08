@@ -55,7 +55,7 @@ color: black;
     text-align: center;
     top: 0;
     left: 0;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 .profile-pic{
@@ -64,19 +64,15 @@ color: black;
     width: 240px;
     justify-self: center;
 }
-
 .banner-text{
     background-color: white;
-    opacity: .8;
     width: 75%;
     margin: auto;
-    border-radius: 10px;
 }
-
 .banner-text h1{
     font-size: 66px;
     font-weight: bold;
-    color: rgb(77, 76, 64);
+    color: lightpink;
 }
 .banner-text hr{
     border-top: 5px dotted rgb(102, 122, 113);
@@ -85,7 +81,6 @@ color: black;
 } 
 .banner-text p{
     font-size: 20px;
-    padding: 1em;
     text-align: center;
 } 
  .social-links{
@@ -93,12 +88,15 @@ color: black;
     width: 50%;
     margin: auto;
 }
-
 .social-links i{
-    color: pink;
+    color: rgb(206, 204, 204);
     font-size: 5em;
     padding: 8px;
+    padding-top: 0;
 } 
+.social-links a:hover{
+    background-color: white;
+}
 
 /* //////Projects//////// */
 
