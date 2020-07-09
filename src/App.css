@@ -110,10 +110,48 @@ color: black;
     display: inline-block;
     margin-right: 20px;
 }
-.category-tabs li:hover{
+.category-tabs button{
+    background-color: white;
+    border: none;
+    color: pink;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.category-tabs button:hover{
     background-color: lightsteelblue;
     cursor: pointer;
     border-radius: 9px;
+}
+.category-tabs button:focus{
+    outline: none;
+}
+
+/*cards*/
+.proj-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    float: center;
+    padding-left: 50px;
+    padding-right: 8px;
+    flex: 1;
+}
+.proj-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 25px;
+}
+.proj-card hr{
+    border-top: 5px dotted black;
+    width: 50%; 
+}
+.proj-card img{
+    height: 250px;
+    width: 400px;
 }
 
 /* //////Blog///// */
@@ -152,7 +190,7 @@ color: black;
     overflow-y: scroll;
 }
 .contact-grid p{
-    font-family: 'Oxygen', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
 }
 .contact-grid hr {
     border-top: 5px dotted black;

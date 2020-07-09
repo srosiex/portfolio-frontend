@@ -9,7 +9,7 @@ export class Projects extends Component {
         super(props);
 
         this.state = {
-            activeTab: 'react'
+            activeTab: "react"
         }
     }
 
@@ -28,6 +28,12 @@ export class Projects extends Component {
             filteredList = projects.filter(p=>p.category==='react')
         }else if(this.state.activeTab === 'javascript'){
             filteredList = projects.filter(p=>p.category ==='javascript')
+        }else if(this.state.activeTab === 'sinatra'){
+            filteredList = projects.filter(p=>p.category ==='sinatra')
+        }else if(this.state.activeTab === 'rails'){
+            filteredList = projects.filter(p=>p.category ==='rails')
+        }else if(this.state.activeTab === "all"){
+            return projects
         }
         
         return filteredList
@@ -37,12 +43,14 @@ export class Projects extends Component {
         console.log(this.state)
         return (
             <div className="projects-body">
+                <h2>Projects</h2>
                 <div className="category-tabs">
                        <ul className="tabs">
                        <li><button value="javascript" onClick={this.handleClick}>javascript</button></li> 
-                       <li>Rails</li>
-                       <li>Sinatra</li>
+                       <li><button value="rails" onClick={this.handleClick}>rails</button></li> 
+                       <li><button value="sinatra" onClick={this.handleClick}>sinatra</button></li> 
                        <li><button value="react" onClick={this.handleClick}>react</button></li>
+                       <li><button value="all" onClick={this.handleClick}>all</button></li>
                        </ul>
                 </div>
                     <div className="content">
