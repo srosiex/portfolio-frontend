@@ -6,7 +6,7 @@ export class About extends Component {
         return (
             <><div className="contact-body">
                 <div className="contact-grid">
-                    <div>
+                    <div className="c-photo">
                         <img src={photoprof} alt="img" style={{height:'250px'}} />  
                     <hr />
                     <p> <i className="fa fa-envelope" aria-hidden="true" style={{color: 'lightGray'}} /> 
@@ -28,7 +28,6 @@ export class About extends Component {
                  <div className="contact-form">
                   <form action="mailto:sarahrose.henderson@gmail.com" method="post" enctype="text/plain">
                   <h2>Contact Me</h2>
-
                       <div className="form-text">
                       <input type="text" name="name" placeholder="Name" />
                       </div>

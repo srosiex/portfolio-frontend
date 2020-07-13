@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import resume from '../photos/SarahHResume.png'
+import resume from '../photos/res.png'
 
 export class Resume extends Component {
     render() {

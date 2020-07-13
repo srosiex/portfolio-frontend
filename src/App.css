@@ -20,6 +20,7 @@ input[type=submit] {
     color: lightpink;
 }
 input[type=submit]:hover{
+    cursor: pointer;
    background-color: rgb(238, 235, 235);
 }
 body{
@@ -48,6 +49,16 @@ color: black;
 .navbar a:hover{
     color: white;
 }
+@media(max-width: 700px){
+    .navbar{
+        text-align: center;
+    }
+    .navbar li{
+        display: grid;
+        grid-template-columns: 
+         3fr;
+    }
+  }
 
 /* ////////Home//////// */
 
@@ -101,7 +112,11 @@ color: black;
 /* //////Projects//////// */
 
 .projects-body {
-    padding-top: 5em;
+    padding-top: 15px;
+    text-align: center;
+}
+.projects-body h2{
+    align-self: center;
 }
 .projects-grid{
     display: flex;
@@ -118,7 +133,7 @@ color: black;
 
 }
 .category-tabs button:hover{
-    background-color: lightsteelblue;
+    background-color: rgb(224, 229, 235);
     cursor: pointer;
     border-radius: 9px;
 }
@@ -129,13 +144,18 @@ color: black;
 /*cards*/
 .proj-card-wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
     float: center;
-    padding-left: 50px;
-    padding-right: 8px;
+    /* max-width: 400px; */
     flex: 1;
 }
+@media(max-width: 700px){
+    .proj-card-wrapper {
+        grid-template-columns: 
+         1fr;
+    } 
+  }
 .proj-card{
     display: flex;
     flex-direction: column;
@@ -144,6 +164,7 @@ color: black;
     margin-bottom: 15px;
     border-radius: 5px;
     padding: 25px;
+    float: center;
 }
 .proj-card hr{
     border-top: 5px dotted black;
@@ -199,6 +220,22 @@ color: black;
     padding-top: 5px;
     padding-bottom: 5px; */
 }
+@media(max-width: 700px){
+    .contact-grid{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 
+         1fr;
+    }
+    .contact-form-body{
+        position: flex;
+        width: 500px;
+    }
+    .contact-form h2{
+      position: relative;
+      width: 500px;
+    }
+  }
 .about-content{
     padding-top: 25px;
 }
