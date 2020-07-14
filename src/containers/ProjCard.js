@@ -1,5 +1,4 @@
 import React from 'react'
-import cookbook from '../photos/cookbookss.png'
 
 const ProjCard = ({projects}) => {
         return (
@@ -10,8 +9,6 @@ const ProjCard = ({projects}) => {
                 <img src={projects.image} alt="cookbook"/>
                 {projects.tech}
             </div>
-
         )
         }
-
 export default ProjCard
