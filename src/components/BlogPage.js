@@ -36,7 +36,7 @@ export class BlogPage extends Component {
                 <div className="blog-content">
                     <Link to='/'>Back</Link>
                     <hr />
-                   <div className="blogimg-div"><img style={{width: '40%'}} src={imageUrl}/></div>
+                   {/* <div className="blogimg-div"><img style={{width: '40%'}} src={imageUrl}/></div> */}
                     <h1>{blog.title.rendered}</h1>
                     <div dangerouslySetInnerHTML={{__html: blog.content.rendered}}></div>
                 </div>

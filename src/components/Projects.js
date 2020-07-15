@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import projects from './projectInfo'
 import ProjCard from '../containers/ProjCard'
 

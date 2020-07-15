@@ -180,10 +180,15 @@ color: black;
 
 .blog-content{
     padding-top: 5em;
+    text-align: left;
+}
+.blog-content h1{
+    text-align: center;
 }
 .blog-img{
     align-content: center;
 }
+
 .blogimg-div {
    display: flex;
    align-items: center;

@@ -45,7 +45,7 @@ export class BlogItem extends Component {
                      <div>
                      <small>Blog by: <strong>{author}</strong></small>
                          <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div></div>
-                    <button><Link to={`/blog/${id}`}>View Post</Link></button>
+                    <button className="view-button"><Link to={`/blog/${id}`}>View Post</Link></button>
                     </div>
                 </div>
             )
