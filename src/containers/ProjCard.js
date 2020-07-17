@@ -11,10 +11,10 @@ const ProjCard = ({projects}) => {
                 <div className="proj-links">
                     <ul>
                         <li>
-                            <a target="_blank" href={projects.github}>GITHUB</a>
+                            <a target="_blank" rel='noreferrer noopener' href={projects.github}>GITHUB</a>
                         </li>
                         <li>
-                            <a target="_blank" href={projects.preview}>PREVIEW</a>
+                            <a target="_blank" rel='noreferrer noopener' href={projects.preview}>PREVIEW</a>
                         </li>
                     </ul>
                 </div>

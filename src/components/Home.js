@@ -17,9 +17,9 @@ export class Home extends Component {
 
                         <div className="social-links">
                             
-                          <a href="https://www.linkedin.com/in/sarahhenderson-dev/" ><i className="fa fa-linkedin-square" rel="noopener noreferrer" aria-hidden="true" /></a>
-                            <a href="https://github.com/srosiex" target="_blank"><i className="fa fa-github-square" rel="noopener noreferrer" aria-hidden="true" /></a>   
-                            <a href="https://twitter.com/sarahh_codes" target="_blank"><i className="fa fa-twitter-square" rel="noopener noreferrer" aria-hidden="true" /></a>                                       
+                          <a href="https://www.linkedin.com/in/sarahhenderson-dev/" target="_blanks" rel='noreferrer noopener' ><i className="fa fa-linkedin-square" rel="noopener noreferrer" aria-hidden="true" /></a>
+                            <a href="https://github.com/srosiex" target="_blank" rel='noreferrer noopener'><i className="fa fa-github-square" rel="noopener noreferrer" aria-hidden="true" /></a>   
+                            <a href="https://twitter.com/sarahh_codes" target="_blank" rel='noreferrer noopener'><i className="fa fa-twitter-square" rel="noopener noreferrer" aria-hidden="true" /></a>                                       
                         </div>
                     </div>
                 </div>
