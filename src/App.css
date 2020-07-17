@@ -175,6 +175,13 @@ color: black;
     height: 250px;
     width: 400px;
 }
+.proj-links{
+    display: grid;
+}
+.proj-links li{
+    list-style: none;
+}
+
 
 /* //////Blog///// */
 

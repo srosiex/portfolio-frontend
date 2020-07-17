@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import projects from './projectInfo'
-import ProjCard from '../containers/ProjCard'
+import projects from '../components/projectInfo'
+import ProjCard from './ProjCard'
 
 export class Projects extends Component {
     constructor(props){

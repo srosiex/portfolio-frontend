@@ -8,6 +8,16 @@ const ProjCard = ({projects}) => {
                 {projects.description}
                 <img src={projects.image} alt="cookbook"/>
                 {projects.tech}
+                <div className="proj-links">
+                    <ul>
+                        <li>
+                            <a target="_blank" href={projects.github}>GITHUB</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href={projects.preview}>PREVIEW</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         )
         }
