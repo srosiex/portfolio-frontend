@@ -30,7 +30,7 @@ export class BlogPage extends Component {
     }
 
     render() {
-        const {blog, isLoaded, imageUrl} = this.state
+        const {blog, isLoaded} = this.state
         if(isLoaded){
             return (
                 <div className="blog-content">
