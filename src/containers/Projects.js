@@ -29,6 +29,8 @@ export class Projects extends Component {
             filteredList = projects.filter(p=>p.category ==='sinatra')
         }else if(this.state.activeTab === 'rails'){
             filteredList = projects.filter(p=>p.category ==='rails')
+        }else if(this.state.activeTab === "ruby"){
+            filteredList = projects.filter(p=>p.category==="ruby")
         }else if(this.state.activeTab === "all"){
             return projects
         }
@@ -44,7 +46,8 @@ export class Projects extends Component {
                        <li><button value="react" onClick={this.handleClick}>react</button></li>
                        <li><button value="javascript" onClick={this.handleClick}>javascript</button></li> 
                        <li><button value="rails" onClick={this.handleClick}>rails</button></li> 
-                       <li><button value="sinatra" onClick={this.handleClick}>sinatra</button></li> 
+                       <li><button value="sinatra" onClick={this.handleClick}>sinatra</button></li>
+                       <li><button value="ruby" onClick={this.handleClick}>ruby</button></li>  
                        <li><button value="all" onClick={this.handleClick}>all</button></li>
                        </ul>
                 </div>

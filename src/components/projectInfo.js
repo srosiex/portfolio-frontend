@@ -51,7 +51,7 @@ const projects = [
         tech: "Utilized Ruby, and ActiveRecord. Used cookies for secure login. Implemented REST for clear URL mapping.",
         description: "Constructed a web application for users to share concerts that they have attended.",
         image: concert,
-        // preview: 'https://concert-collector-sinatra.herokuapp.com/',
+        preview: 'https://concert-collector-sinatra.herokuapp.com/',
         github: 'https://github.com/srosiex/concert_collector',  
     },
     {
@@ -60,9 +60,10 @@ const projects = [
         tech: "Utilized Ruby, and the San Fransisco governmant API, Rest-Client, JSON",
         description: "Created a CLI that pulls all of the open food trucks in the San Fran area at the time of running the application.",
         image: foodtruck,
-        preview: 'https://concert-collector-sinatra.herokuapp.com/',
+        preview: 'https://github.com/srosiex/foodtruck-cli/tree/master/food_truck_cli',
         github: 'https://github.com/srosiex/foodtruck-cli/tree/master/food_truck_cli',  
-    }
+    },
+
 ]
 // const projects = {
 //         react: {
