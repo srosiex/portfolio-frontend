@@ -10,7 +10,7 @@ export class Navbar extends Component {
             <li><NavLink to={`/`}>Home</NavLink></li>
             <li><NavLink to={`projects`}>Projects</NavLink></li>  
             <li><NavLink to={`about`}>About Me</NavLink></li>                 
-            <li><NavLink to={`/blog`}>Blog</NavLink></li>
+            {/* <li><NavLink to={`/blog`}>Blog</NavLink></li> */}
             <li><NavLink to={`/resume`}>Resume</NavLink></li>
         </ul>
     </div>
