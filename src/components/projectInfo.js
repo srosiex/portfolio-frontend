@@ -5,6 +5,7 @@ import portfo from '../photos/portfo.png'
 import task from '../photos/t.png'
 import vegrev from '../photos/vegrev.png'
 import foodtruck from '../photos/foodtruck.png'
+import lukes from '../photos/lukes.png'
 
 const projects = [
      {
@@ -63,6 +64,16 @@ const projects = [
         preview: 'https://github.com/srosiex/foodtruck-cli/tree/master/food_truck_cli',
         github: 'https://github.com/srosiex/foodtruck-cli/tree/master/food_truck_cli',  
     },
+    {
+        name: "luke's trivia game",
+        category: "javascript",
+        tech: "Utilized Javascript and Open Trivia API for the questions/answers.",
+        description: "Created a javascript based trivia game using Open Trivia API.",
+        image: lukes,
+        preview: 'https://lukes-trivia.netlify.app/',
+        github: 'https://github.com/srosiex/js-quiz',  
+    },
+
 
 ]
 // const projects = {
